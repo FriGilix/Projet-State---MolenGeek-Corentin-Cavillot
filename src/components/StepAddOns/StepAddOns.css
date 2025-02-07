@@ -33,3 +33,8 @@
     border: 3px solid rgb(216, 51, 216);
 }
 
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

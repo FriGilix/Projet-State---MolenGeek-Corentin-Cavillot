@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './StepAddOns.css'
 
-export default function StepAddOns({ nextStep, prevStep}) {
+export default function StepAddOns({ nextStep, prevStep, selectedPlan}) {
+
+  const [selectedAddOns, setSelectedAddons] = useState([])
+
+  const addOns =[
+    
+  ]
+
   return (
 
     <div className='add-on-container'>
