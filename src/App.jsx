@@ -6,13 +6,14 @@ import StepPersonalInfo from './components/StepPersonalInfo/StepPersonalInfo'
 import StepSelectPlan from './components/StepSelectPlan/StepSelectPlan'
 import StepSummary from './components/StepSummary/StepSummary'
 import StepThankYou from './components/StepThankYou/StepThankYou'
-import PlanSelect from './components/StepSelectPlan/StepSelectPlan'
+
 
 
 function App() {
   
 
   const [step, setStep] = useState(1)
+  
 
   const nextStep = () => setStep((prev) => prev + 1)
   const prevStep = () => setStep((prev) => prev -1)

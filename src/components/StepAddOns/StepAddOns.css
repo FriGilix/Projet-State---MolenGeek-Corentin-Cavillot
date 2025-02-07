@@ -1,40 +1,80 @@
 .add-on-container{
-    background-color: white;
-    padding: 30px;
-    max-width: 400px;
-    margin: auto;
-    border-radius: 10px;
-    font-family: Arial, sans-serif; 
+    padding: 0 20px;
 }
 
+h2{
+    color: #2a2a2a;
+}
+
+.subtitle{
+    color: gray;
+    margin-bottom: 20px;
+}
 
 .addons{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }
 
 .addon{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    height: 40px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.addon.selected{
+    border-color: #4a90e2;
+    background: #f0f8ff;
 }
 
 .addon input{
-    transform: scale(1.2);
+    margin-right: 15px;
 }
 
-.addon:hover{
-    border: 3px solid rgb(216, 51, 216);
+.addon-info{
+    flex: 1;
 }
 
-.button{
+.price{
+    font-weight: bold;
+    color: #3f00d3;
+}
+
+.buttons{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.prev-button, .next-button{
+    padding: 10px 20px;
+    border: none;
+    border: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.prev-button{
+    background: none;
+    color: #002D62;
+    font-weight: bold;
+}
+
+.next-button{
+    background-color: #002D62;
+    color: white;
+}
+
+.next-button:disabled{
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled){
+    background-color: #004080;
 }
