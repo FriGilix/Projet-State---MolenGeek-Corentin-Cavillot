@@ -1,0 +1,35 @@
+.add-on-container{
+    background-color: white;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    font-family: Arial, sans-serif; 
+}
+
+
+.addons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.addon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.addon input{
+    transform: scale(1.2);
+}
+
+.addon:hover{
+    border: 3px solid rgb(216, 51, 216);
+}
+
